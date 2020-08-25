@@ -4,7 +4,7 @@ const axios = require('axios');
 
 function About() {
   useEffect(()=>{
-    axios.post('https://auth:3000/api/auth/login',{
+    axios.post('auth:3000/api/auth/login',{
       user: "test",
       password: "test2"
     })
