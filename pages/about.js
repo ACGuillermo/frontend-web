@@ -17,6 +17,7 @@ function About() {
         <a>Home</a>
       </Link>
       <h1>About</h1>
+      TESTING
     </>
   )
 }
