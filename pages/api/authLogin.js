@@ -1,7 +1,8 @@
 const axios = require('axios');
+require('dotenv').config();
 export default (req, res) => {
   console.log('Lammada auth api in nextjs')
-    axios.post('http://auth:3000/api/auth/login',{
+    axios.post(process.env.API_URL + 'auth/login',{
         user: "test",
         password: "test2"
       })
