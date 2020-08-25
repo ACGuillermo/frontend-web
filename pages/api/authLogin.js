@@ -1,7 +1,7 @@
 const axios = require('axios');
 export default (req, res) => {
   console.log('Lammada auth api in nextjs')
-    axios.post('auth:3000/api/auth/login',{
+    axios.post('http://auth:3000/api/auth/login',{
         user: "test",
         password: "test2"
       })
