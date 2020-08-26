@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {},
   },
