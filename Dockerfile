@@ -20,6 +20,9 @@ COPY ./ ./
 # Build app
 RUN npm run build
 
+# Delete dev dependencies
+RUN npm uninstall tailwindcss postcss-flexbugs-fixes postcss-preset-env --no-save
+
 # Expose the listening port
 EXPOSE 3000
 
