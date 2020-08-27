@@ -3,13 +3,12 @@
 
 .side-drawer{
     @apply h-full bg-gray-900 w-2/3 fixed top-0 right-0 z-30 shadow-2xl;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-out;
+    width: 0;
+    transition: all 0.3s ease-out;
 }
 
 .side-drawer.open{
-    transform: translateX(0%);
-    transition: transform 0.3s ease-out;
+    width: 66%;
 }
 
 @tailwind utilities;
