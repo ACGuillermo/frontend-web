@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
+
+.side-drawer{
+    @apply h-full bg-gray-900 w-2/3 fixed top-0 right-0 z-30 shadow-2xl;
+    transform: translateX(100%);
+    transition: all 0.3s ease-out;
+}
+
+.side-drawer.open{
+    transition: all 0.3s ease-out;
+    transform: translateX(0%);
+}
+
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    @apply bg-gray-900;
+    font-family: 'Poppins', 'sans-serif';
+    height: 100vh;
+}
+
+html{
+    height: 100vh;
+}
+
