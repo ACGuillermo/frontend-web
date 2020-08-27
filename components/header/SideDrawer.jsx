@@ -1,8 +1,8 @@
 const SideDrawer = ({click, show}) =>{
-    let drawerClasses = 'side-drawer';
+    let drawerClasses = 'md:hidden side-drawer';
     
     if(show) {
-        drawerClasses = 'side-drawer open'
+        drawerClasses = 'md:hidden side-drawer open'
         
     }
     console.log(drawerClasses)
