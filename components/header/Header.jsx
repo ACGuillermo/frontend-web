@@ -11,21 +11,17 @@ const Header = () => {
         console.log(!sideDrawerOpen)
         setSideDrawerOpen(!sideDrawerOpen)
     }
-
-    const sideDrawerCloseHandler = () => {
-        setSideDrawerOpen(false)
-    }
-
-    const backDropClickHandler = () => {
+    
+    const closeSideDrawer = () => {
         setSideDrawerOpen(false)
     }
 
     return(
         <header className="w-full">
             <Toolbar drawerClickHandler={drawerToggleClickHandler} />
-            <SideDrawer show={sideDrawerOpen} click={sideDrawerCloseHandler}/>
+            <SideDrawer show={sideDrawerOpen} click={closeSideDrawer}/>
             {sideDrawerOpen  
-                ? <Backdrop click={backDropClickHandler}/>
+                ? <Backdrop click={closeSideDrawer}/>
                 : null
             }
         </header>

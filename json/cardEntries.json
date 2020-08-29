@@ -1,0 +1,27 @@
+[
+    {
+        "command": "> Guillermo.currentLocation",
+        "result": "'Barcelona, ES'",
+        "id": 1
+    },
+    {
+        "command": "> Guillermo.contactInfo",
+        "result": "['acguiller@gmail.com', 'Linkedin', 'github']",
+        "id": 2
+    },
+    {
+        "command": "> Guillermo.resume",
+        "result": "'acguiller.pdf'",
+        "id": 3
+    },
+    {
+        "command": "> Guillermo.education",
+        "result": "'Grado Superior Desarrollo Aplicaciones Web, IES Joan D'Austria'",
+        "id": 4
+    },
+    {
+        "command": "> Guillermo.skills",
+        "result": "['JavaScript', 'React', 'NodeJS', 'NextJS', 'Docker', 'MongoDB', 'Firebase', 'git', 'Jasmine', 'HTML', 'CSS']",
+        "id": 5
+    }
+]

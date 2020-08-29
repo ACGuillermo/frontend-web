@@ -9,13 +9,13 @@ const Toolbar = ({drawerClickHandler}) => (
         <div className="hidden md:block text-md font-medium">
             <ul className="inline-flex">
                 <li>
-                    <div className="flex-1 text-teal-500 text-center px-4 py-2 m-2"><a href="/">About</a></div>
+                    <div className="flex-1 text-indigo-500 text-center px-4 py-2 m-2"><a href="/">About</a></div>
                 </li>
                 <li>
-                    <div className="flex-1 text-teal-500 text-center px-4 py-2 m-2"><a href="/">Blog</a></div>
+                    <div className="flex-1 text-indigo-500 text-center px-4 py-2 m-2"><a href="/">Blog</a></div>
                 </li>
                 <li>
-                    <div className="flex-1 text-teal-500 text-center px-4 py-2 m-2"><a href="/">Contact</a></div>
+                    <div className="flex-1 text-indigo-500 text-center px-4 py-2 m-2"><a href="/">Contact</a></div>
                 </li>
             </ul>
         </div>
