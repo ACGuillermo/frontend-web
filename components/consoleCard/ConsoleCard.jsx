@@ -1,4 +1,4 @@
-import CardEntry from './cardEntry'
+import CardEntry from './CardEntry'
 import cardEntries from '../../json/cardEntries.json'
 
 const ConsoleCard = () => {
