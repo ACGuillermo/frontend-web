@@ -7,7 +7,7 @@ import ReactMarkdown from "react-markdown/with-html";
 const Post = ({content}) => (
     <HomeLayout>
         <article className="w-full">
-            <div className="markdown mx-auto pt-12 pb-20">
+            <div className="prose prose-sm md:prose-lg pt-12 pb-20">
                 <ReactMarkdown escapeHtml={false} source={content} />
             </div>
         </article>
