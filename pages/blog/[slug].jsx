@@ -3,14 +3,21 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown/with-html";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+
+import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import jsx from 'react-syntax-highlighter/dist/cjs/languages/prism/jsx';
+import js from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript';
+import prism from 'react-syntax-highlighter/dist/cjs/styles/prism/prism';
+
+SyntaxHighlighter.registerLanguage('jsx', jsx);
+SyntaxHighlighter.registerLanguage('js', js);
 
 function Image(props) {
     return <img {...props} className="w-full mx-auto" />
   }
 
 const CodeBlock = ({ language, value }) => {
-return <SyntaxHighlighter showLineNumbers={true} language={language}>{value}</SyntaxHighlighter>;
+return <SyntaxHighlighter style={prism} showLineNumbers={true} language={language}>{value}</SyntaxHighlighter>;
 };
 
 const Post = ({content}) => (
