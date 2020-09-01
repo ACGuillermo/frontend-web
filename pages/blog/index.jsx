@@ -9,7 +9,7 @@ export default function Blog({posts}){
         <HomeLayout>
             <div className="flex">
                 <div className="w-full">
-                    <h1 className="text-gray-800 text-lg font-bold md:w-1/3">Blog personal de <a href="/" className="text-teal-600 underline hover:no-underline">Guillermo Aguilar</a></h1>
+                    <h1 className="text-gray-800 text-lg font-bold md:w-1/3">Blog personal de <a href="/" className="text-indigo-600 underline hover:no-underline">Guillermo Aguilar</a></h1>
                     <p className="text-gray-600 text-sm">Lo intento...</p>
                 </div>
             </div>
@@ -17,7 +17,7 @@ export default function Blog({posts}){
                 {posts.map(({ frontmatter: { title, description, date }, slug }) => (
                     <article key={title} className="mt-12">
                         <header>
-                            <h2 className="text-4xl leading-10 font-bold text-teal-600">
+                            <h2 className="text-4xl leading-10 font-bold text-indigo-600">
                                 <Link href={"/blog/[slug]"} as={`/blog/${slug}`}>
                                     <a>{title}</a>
                                 </Link>

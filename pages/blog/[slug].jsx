@@ -3,12 +3,21 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown/with-html";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+
+function Image(props) {
+    return <img {...props} className="w-full mx-auto" />
+  }
+
+const CodeBlock = ({ language, value }) => {
+return <SyntaxHighlighter showLineNumbers={true} language={language}>{value}</SyntaxHighlighter>;
+};
 
 const Post = ({content}) => (
     <HomeLayout>
         <article className="w-full">
             <div className="prose prose-sm md:prose-lg pt-12 pb-20">
-                <ReactMarkdown escapeHtml={false} source={content} />
+                <ReactMarkdown escapeHtml={false} source={content} renderers={{image: Image, code: CodeBlock}}/>
             </div>
         </article>
     </HomeLayout>
