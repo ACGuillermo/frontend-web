@@ -13,7 +13,7 @@ SyntaxHighlighter.registerLanguage('jsx', jsx);
 SyntaxHighlighter.registerLanguage('js', js);
 
 function Image(props) {
-    return <img {...props} className="w-full mx-auto" />
+    return <img {...props} className="h-auto mx-auto" />
   }
 
 const CodeBlock = ({ language, value }) => {
